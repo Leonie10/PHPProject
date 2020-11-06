@@ -1,27 +1,70 @@
+
+.messages-wrapper{
+    position: relative;
+    margin: 1rem;
+    height: 55vh;
+    width: 30vw;
+    border: 0.2rem solid blue;
+    overflow: scroll;
+    background-color: rgb(248, 247, 232);
+}
+
+
 form{
     position: absolute;
-    top: 10vh;
+    top: 60vh;
     width: 70vw;
     height: 40vh;    
 }
-input, button{
+input,textarea, button{
     position: relative;
     display: block;
     margin: 1rem;
     height: 5vh;
     border: 0.01rem solid blue;
 }
-input{
-    width: 50vw ;
+input, textarea{
+    width: 25vw ;
     padding-left: 1rem;
+    background-color: rgb(248, 247, 232);
 
+
+}
+textarea{
+    height: 10vh;
 }
 input::placeholder{
     color: blue;
     opacity: 0.5;
 }
+textarea::placeholder{
+    color: blue;
+    opacity: 0.5;
+}
+
 button{
     color: blue;
     background-color: white;
 
 }
+
+.messages:nth-child(odd) {
+    left: 40%;
+}
+.messages {
+    position: relative;
+    height: auto;
+    display: inline-block;
+    width: 40%;
+    line-height: 18px;
+    margin: 13px;
+    margin-bottom: 45px;;
+    border: 2px solid blue;
+    background-color: white;
+    color: blue;
+    font-family: sans-serif;
+    padding: 2%;
+    border-radius: 15px;
+    
+}
+
